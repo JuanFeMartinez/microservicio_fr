@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de usuarios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestion de usuarios</h1>
+    </header>
+    <main>
+        <section>
+            <table id="usuariosTb">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Usuario</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>jfmartinezv</td>
+                        <td>
+                            <button>Modificar</button>
+                        </td>
+                        <td>
+                            <button>Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <form>
+                <label>
+                    <span>Nombre: </span>
+                    <input type="text" name="name" malength="200" required id="nombre">
+                </label>
+                <label>
+                    <span>Username: </span>
+                    <input type="text" name="username" malength="150" required id="usuario">
+                </label>
+                <label>
+                    <span>Contraseña: </span>
+                    <input type="password" name="password" malength="200" required id="password">
+                </label>
+                <section>
+                    <button onclick="registro()">Guardar</button>
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Programacion avanzada</p>
+        <br>
+        <p>@2023</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/gestionUsuarios.js"></script>
+</body>
+
+</html>
