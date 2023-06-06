@@ -3,28 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gestion de usuarios</title>
+    <title>Actividades</title>
 </head>
 
 <body>
     <header>
-        <h1>Gestion de usuarios</h1>
+        <h1>Gestion de Actividades</h1>
     </header>
     <main>
         <section>
-            <table id="usuariosTb">
+            <button id="registrar">Registrar actividad</button>
+            <table id="estudiantesTb">
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Usuario</th>
+                        <th>Id</th>
+                        <th>Descripcion</th>
+                        <th>Notas</th>
                         <th></th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Juan</td>
-                        <td>jfmartinezv</td>
                         <td>
                             <button>Modificar</button>
                         </td>
@@ -36,30 +36,26 @@
             </table>
         </section>
         <section>
-            <form>
+            <h2 id="tituloModal">Crear</h2>
+            <form id="formActividad" name="formularioActividad">
                 <label>
-                    <span>Nombre: </span>
-                    <input type="text" name="name" malength="200" required id="nombre">
+                    <span>Descripcion: </span>
+                    <input id="descripcion" type="text" name="descripcion" maxlength="500" required>
                 </label>
                 <label>
-                    <span>Username: </span>
-                    <input type="text" name="username" malength="150" required id="usuario">
-                </label>
+                    <span>Nota: </span>
+                    <input id="nota" type="number" name="nota" required>        
+                </label>        
                 <label>
-                    <span>Contraseña: </span>
-                    <input type="password" name="password" malength="200" required id="password">
+                    <span>Codigo del estudiante: </span>
+                    <input id="codigoEstudiante" type="number" name="codigoEstudiante" required>
                 </label>
                 <section>
-                    <button onclick="registro()">Guardar</button>
+                    <button id="guardar" type="button">Guardar</button>
                 </section>
             </form>
         </section>
     </main>
-    <footer>
-        <p>Programacion avanzada</p>
-        <br>
-        <p>@2023</p>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="js/gestionUsuarios.js"></script>
 </body>
