@@ -39,7 +39,7 @@ function registrar(id, descripcion, nota, codigoEstudiante) {
 $(document).ready(function(){
     $.ajax({
         method: 'get',
-        url: 'http://localhost:8000/usuarios'
+        url: 'http://localhost:8000/actividades'
     }).done((response)=>{
         const dataJson = JSON.parse(response);
         const usuarios = dataJson.data;
